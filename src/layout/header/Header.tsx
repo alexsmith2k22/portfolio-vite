@@ -7,12 +7,13 @@ import { Icon } from "../../components/icon/Icon";
 import { MobileMenu } from "../../components/menu/MobileMenu";
 
 const items = ["Home", "About me", "Projects", "Skills", "Contacts"];
+const itemsMobile = ["Home", "Projects", "Contacts"];
 
 export function Header() {
   return (
     <StyledHeader>
       <Menu menuItems={items} />
-      <MobileMenu menuItems={items} />
+      <MobileMenu menuItems={itemsMobile} />
       <StyledFlexWrapper
         justifyContent="space-between"
         alignItems="center"
